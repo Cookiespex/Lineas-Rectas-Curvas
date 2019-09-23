@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="lineas" />
+	<meta name="author" content="Cookies Pex" />
+    <title>Canvas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1>¿¿¿Lineas rectas o curvas???</h1>
+
+    <article id="formu">
+        <label>Cuantas lineas quieres</label>
+        <input type="text" id="texto_lineas" />
+        <label>Que figura quieres (1 = Cuadrado ó 2 = Rombo ó 3 = X)</label>
+        <input type="text" id="figura_lineas" /> <br />
+        <label>Elije un color en ingles</label>
+        <input type="text" id="color_lineas" />
+        <input type="button" value="Dibujar" id="botonDibujar" />
+        <input type="button" value="Borrar" id="botonBorrar" />
+    </article>
+
+    <main id="contenidoCanvas" class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <canvas id="dibujito" width="500" height="500"></canvas>
+        </div>
+    </main>
+
+    <a id="carita" href="https://www.youtube.com/watch?v=ie3mbivU7QQ" target="_blank">:V</a>
+    <a id="carita2" href="https://www.youtube.com/watch?v=0yr75-gxVtM" target="_blank">:V</a>
+
+    <script src="js/app.js"></script>
+    <script>
+		window.addEventListener("load", function () {
+			document.querySelector("#carita").addEventListener('click', function () {
+				console.log('hola :v');
+			}, false)
+		}, false)
+	</script>
+</body>
+
+</html>
